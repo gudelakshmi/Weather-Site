@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/181acb72f3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="body">
+        <div class="container">
+            <div class="top-container">
+                <div class="search">
+                    <input type="text" class="search-box" id="search-city"
+                        placeholder=" Enter the city name" /><span><button class="search-icon">
+                            <i class="fas fa-search"></i></button></span>
+                </div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h2 class="city-name">
+                                    City Name
+                                </h2>
+                                <h3>
+                                    Tues, 11 Nov 17:30
+                                </h3>
+                            </td>
+                            <td>
+                                <i class="fas fa-cloud-sun-rain main-icon"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="pressure">
+                                    Pressure: 1027 hPa
+                                </p>
+                                <p class="humidity">
+                                    Humidity: 93%
+                                </p>
+                                <p class="wind">
+                                    Wind: 14 kmph
+                                </p>
+                            </td>
+                            <td>
+                                <h1 class="main-temp">
+                                    23°C
+                                </h1>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bottom-container">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="day-temp">
+                                <p>
+                                    Wed
+                                </p>
+                                <i class="fas fa-cloud-moon-rain"></i>
+                                <p>
+                                    17°C
+                                </p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day-temp">
+                                <p>
+                                    Thurs
+                                </p>
+                                <i class="fas fa-cloud-moon-rain"></i>
+                                <p>
+                                    17°C
+                                </p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day-temp">
+                                <p>
+                                    Fri
+                                </p>
+                                <i class="fas fa-cloud-moon-rain"></i>
+                                <p>
+                                    17°C
+                                </p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day-temp">
+                                <p>
+                                    Sat
+                                </p>
+                                <i class="fas fa-cloud-moon-rain"></i>
+                                <p>
+                                    17°C
+                                </p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day-temp">
+                                <p>
+                                    Sun
+                                </p>
+                                <i class="fas fa-cloud-moon-rain"></i>
+                                <p>
+                                    17°C
+                                </p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day-temp">
+                                <p>
+                                    Mon
+                                </p>
+                                <i class="fas fa-cloud-moon-rain"></i>
+                                <p>
+                                    17°C
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
