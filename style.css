@@ -26,7 +26,7 @@ body {
     border-style: none;
     box-shadow: 8px 8px 6px black;
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
 }
 
 .city-name {
@@ -48,13 +48,14 @@ body {
 }
 
 .search-icon {
+    color: white;
     font-size: 20px;
     padding: 7px;
     transition: all 200ms ease-in-out;
 }
 
 .search-icon:hover {
-    color: white;
+    opacity: 0.6;
 }
 
 .search {
@@ -62,10 +63,15 @@ body {
     margin: 0 20px;
 }
 
+.details {
+    padding-top: 30px;
+}
+
 .main-temp {
     font-size: 55px;
     font-weight: 150;
     margin-right: 50px;
+    padding: 0;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -75,10 +81,20 @@ tr {
     margin-bottom: 2px;
 }
 
-.main-icon {
-    font-size: 70px;
-    opacity: 0.7;
-    padding-left: 10px;
+.main-icon:hover {
+    opacity: 0.8;
+}
+
+.description {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.temp-desc {
+    padding-top: 5px;
+    align-items: center;
 }
 
 table {
@@ -97,7 +113,6 @@ table {
 
 .bottom-container {
     padding-top: 30px;
-    padding-left: 20px;
 }
 
 .top-container td {
@@ -114,5 +129,49 @@ table {
 
 .bottom-container i {
     font-size: 20px;
+    margin: 0 auto;
+}
+
+.last-p {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    padding-top: 5px;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+}
+
+.github-link {
+    font-weight: bold;
+    color: rgb(190, 0, 0);
+}
+
+.github-link:hover {
+    font-size: 18px;
+    color: white;
+}
+
+.last-p span {
+    color: white;
+}
+
+.weather-forecast {
+    align-items: center;
+    text-align: center;
+}
+
+.weather-forecast-temp {
+    font-size: small;
+    text-align: center;
+}
+
+.weather-forecast-date {
+    font-size: small;
+    text-align: center;
+}
+
+.forecast-img {
+    /* text-align: center; */
+    padding: 0 auto;
     margin: 0 auto;
 }
